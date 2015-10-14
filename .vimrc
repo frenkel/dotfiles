@@ -1,14 +1,23 @@
 syntax on
-set background=dark            " dark terminal background
+" dark terminal background
+set background=dark
 
+" define a red ExtraWhitespace color class
 highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/  " Show trailing whitespace:
-" Show trailing whitespace and spaces before a tab:
+" show trailing whitespace:
+match ExtraWhitespace /\s\+$/
+" show trailing whitespace and spaces before a tab
 match ExtraWhitespace /\s\+$\| \+\ze\t/
 
-set cursorline                 " highlight current line
-set wildmenu                   " visual autocomplete for command menu
-set showmatch                  " highlight matching [{()}]
+" visual autocomplete for command menu
+set wildmenu
+" highlight matching [{()}]
+set showmatch
 
-autocmd FileType ruby,eruby,yaml setlocal et ts=2 sw=2 ai
-autocmd FileType php setlocal ts=4 sw=4 ai
+" search without case-sensitivity
+set ignorecase
+" search case-sensitive when pattern contains upper case characters
+set smartcase
+
+autocmd FileType ruby,eruby,yaml setlocal et ts=2 sw=2 sts=2 ai
+autocmd FileType php setlocal ts=4 sw=4 sts=4 ai
