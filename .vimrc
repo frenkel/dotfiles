@@ -19,5 +19,11 @@ set ignorecase
 " search case-sensitive when pattern contains upper case characters
 set smartcase
 
-autocmd FileType ruby,eruby,yaml setlocal et ts=2 sw=2 sts=2 ai
-autocmd FileType php setlocal ts=4 sw=4 sts=4 ai
+" when 'sts' is negative, the value of 'shiftwidth' is used
+set sts=-1
+
+" set filetype for .coffee
+au BufRead,BufNewFile *.coffee set filetype=coffeescript
+
+autocmd FileType ruby,eruby,yaml,coffeescript setlocal et ts=2 sw=2 ai
+autocmd FileType php setlocal ts=4 sw=4 ai
