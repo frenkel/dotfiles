@@ -13,6 +13,8 @@ match ExtraWhitespace /\s\+$\| \+\ze\t/
 set wildmenu
 " highlight matching [{()}]
 set showmatch
+" show line and column
+set ruler
 
 " search without case-sensitivity
 set ignorecase
