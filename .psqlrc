@@ -1,0 +1,6 @@
+-- transform to upppercase when completing keywords
+\set COMP_KEYWORD_CASE upper
+-- don't use columns when it won't fit in the terminal width
+\x auto
+-- display null values different from empty strings
+\pset null '(null)'
