@@ -1,0 +1,3 @@
+XTerm*font: *-fixed-*-*-*-18-*
+XTerm*reverseVideo: on
+XTerm*scrollBar: off
