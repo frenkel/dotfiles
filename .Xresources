@@ -9,4 +9,6 @@ XTerm*eightBitInput: false
 *VT100*background: black
 ! more readable blue on black backgrounds
 *VT100*color4: DodgerBlue1
+*VT100*color10: LawnGreen
 *VT100*color12: SteelBlue1
+*VT100*color13: HotPink1
