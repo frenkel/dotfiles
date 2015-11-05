@@ -1,3 +1,12 @@
-XTerm*font: *-fixed-*-*-*-18-*
-XTerm*reverseVideo: on
+! bigger font sie
+XTerm*font: *-fixed-medium-*-*-18-*
+! no scrollbar
 XTerm*scrollBar: off
+! allow ALT-F etc to work
+XTerm*eightBitInput: false
+
+*VT100*foreground: white
+*VT100*background: black
+! more readable blue on black backgrounds
+*VT100*color4: DodgerBlue1
+*VT100*color12: SteelBlue1
