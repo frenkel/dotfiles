@@ -21,6 +21,9 @@ set ignorecase
 " search case-sensitive when pattern contains upper case characters
 set smartcase
 
+" allow backspace over indent, eol and insert start
+set backspace=indent,eol,start
+
 " when 'sts' is negative, the value of 'shiftwidth' is used
 set sts=-1
 
