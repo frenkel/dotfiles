@@ -27,8 +27,5 @@ set backspace=indent,eol,start
 " when 'sts' is negative, the value of 'shiftwidth' is used
 set sts=-1
 
-" set filetype for .coffee
-au BufRead,BufNewFile *.coffee set filetype=coffeescript
-
-autocmd FileType ruby,eruby,yaml,coffeescript setlocal et ts=2 sw=2 ai
+autocmd FileType ruby,eruby,yaml,coffee setlocal et ts=2 sw=2 ai
 autocmd FileType php setlocal ts=4 sw=4 ai
