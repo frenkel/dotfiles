@@ -29,3 +29,6 @@ set sts=-1
 
 autocmd FileType ruby,eruby,yaml,coffee setlocal et ts=2 sw=2 ai
 autocmd FileType php setlocal ts=4 sw=4 ai
+
+" highlight the 80 char column
+set colorcolumn=80
