@@ -32,3 +32,7 @@ autocmd FileType php setlocal ts=4 sw=4 ai
 
 " highlight the 80 char column
 set colorcolumn=80
+
+" line numbers relative to current cursor position
+set number
+set relativenumber
