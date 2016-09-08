@@ -1,0 +1,11 @@
+# unbind pointer movement because of overlap with readline input
+bind C-Up unmap
+bind C-Right unmap
+bind C-Down unmap
+bind C-Left unmap
+
+# rebind pointer movement because of overlap with readline input
+bind CM-Up ptrmoveup
+bind CM-Right ptrmoveright
+bind CM-Down ptrmovedown
+bind CM-Left ptrmoveleft
