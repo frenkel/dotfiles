@@ -1,0 +1,4 @@
+image/*; eog %s
+application/pdf; evince %s
+application/msword; lowriter %s
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; lowriter %s
