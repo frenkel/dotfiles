@@ -1,4 +1,4 @@
-! bigger font sie
+! bigger font size
 XTerm*font: *-fixed-medium-*-*-18-*
 ! no scrollbar
 XTerm*scrollBar: off
