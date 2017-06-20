@@ -27,7 +27,7 @@ set backspace=indent,eol,start
 " when 'sts' is negative, the value of 'shiftwidth' is used
 set sts=-1
 
-autocmd FileType ruby,eruby,yaml,coffee setlocal et ts=2 sw=2 ai
+autocmd FileType ruby,eruby,yaml,coffee,javascript setlocal et ts=2 sw=2 ai
 autocmd FileType php setlocal ts=4 sw=4 ai
 
 " highlight the 80 char column
