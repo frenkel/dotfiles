@@ -1,0 +1,39 @@
+set editor='vim -c "set textwidth=72" -c "set wrap" -c "set fo+=w"'
+
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed = "+[Gmail]/Concepten"
+set trash = "imaps://imap.gmail.com/[Gmail]/Prullenbak"
+set record = ""
+
+set header_cache = ~/.mutt/cache/headers
+set message_cachedir = ~/.mutt/cache/bodies
+set certificate_file = ~/.mutt/certificates
+
+# check for new mail every 5 minutes
+set mail_check = 300
+
+# Gmail-style keyboard shortcuts
+bind editor <space> noop
+macro index,pager y "<save-message>=[Gmail]/Alle berichten<enter><enter>" "Archive"
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ga "<change-folder>=[Gmail]/Alle berichten<enter>" "Go to all mail"
+macro index gs "<change-folder>=[Gmail]/Verzonden berichten<enter>" "Go to Sent Mail"
+macro index gd "<change-folder>=[Gmail]/Concepten<enter>" "Go to drafts"
+
+# new or marked as unread
+color index yellow black "~O | ~N"
+# flagged messages
+color index black red "~F"
+
+# address book
+set alias_file = ~/.mutt/aliases
+source $alias_file
+
+# unfortunately the world we live in loves top-replying...
+set sig_on_top = yes
+
+set text_flowed
+
+# passwords etc are not in this version-controlled file
+source ~/.muttrc.local
