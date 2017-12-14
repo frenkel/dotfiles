@@ -1,27 +1,4 @@
-# unbind pointer movement because of overlap with readline input
-bind C-Up unmap
-bind C-Right unmap
-bind C-Down unmap
-bind C-Left unmap
-bind SC-Up unmap
-bind SC-Right unmap
-bind SC-Down unmap
-bind SC-Left unmap
+# turn on sticky-group mode
+sticky yes
 
-# rebind pointer movement because of overlap with readline input
-bind CM-Up ptrmoveup
-bind CM-Right ptrmoveright
-bind CM-Down ptrmovedown
-bind CM-Left ptrmoveleft
-bind SCM-Up bigptrmoveup
-bind SCM-Right bigptrmoveright
-bind SCM-Down bigptrmovedown
-bind SCM-Left bigptrmoveleft
-
-# unbind group switch because of overlap with Firefox back/forward
-bind M-Left unmap
-bind M-Right unmap
-
-# rebind group switch because of overlap with Firefox back/forward
-bind M-Down cyclegroup
-bind M-Up rcyclegroup
+command term gnome-terminal
