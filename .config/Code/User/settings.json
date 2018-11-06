@@ -1,0 +1,14 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [
+        80
+    ],
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.fontFamily": "Fira Code",
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Monokai",
+    "workbench.activityBar.visible": false,
+}
