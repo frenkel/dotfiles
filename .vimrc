@@ -2,12 +2,10 @@ syntax on
 " dark terminal background
 set background=dark
 
-" define a red ExtraWhitespace color class
-highlight ExtraWhitespace ctermbg=red guibg=red
 " show trailing whitespace:
-match ExtraWhitespace /\s\+$/
+match Error /\s\+$/
 " show trailing whitespace and spaces before a tab
-match ExtraWhitespace /\s\+$\| \+\ze\t/
+match Error /\s\+$\| \+\ze\t/
 
 " visual autocomplete for command menu
 set wildmenu
@@ -27,7 +25,7 @@ set backspace=indent,eol,start
 " when 'sts' is negative, the value of 'shiftwidth' is used
 set sts=-1
 
-autocmd FileType ruby,eruby,yaml,coffee,javascript setlocal et ts=2 sw=2 ai
+autocmd FileType ruby,eruby,yaml,coffee,javascript,json setlocal et ts=2 sw=2 ai
 autocmd FileType php setlocal ts=4 sw=4 ai
 autocmd FileType rust setlocal et ts=4 sw=4 ai
 
