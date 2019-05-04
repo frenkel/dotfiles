@@ -25,9 +25,15 @@ set backspace=indent,eol,start
 " when 'sts' is negative, the value of 'shiftwidth' is used
 set sts=-1
 
+" expand tab, tab size and autoindent based on file type
 autocmd FileType ruby,eruby,yaml,coffee,javascript,json setlocal et ts=2 sw=2 ai
 autocmd FileType php setlocal ts=4 sw=4 ai
 autocmd FileType rust setlocal et ts=4 sw=4 ai
+
+" use rails test as make command
+autocmd FileType ruby setlocal makeprg=bin/rails\ test
+" use git grep as grep command
+set grepprg=git\ grep\ -n
 
 " highlight the 80 char column
 set colorcolumn=80
