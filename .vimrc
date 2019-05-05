@@ -9,6 +9,8 @@ match Error /\s\+$\| \+\ze\t/
 
 " visual autocomplete for command menu
 set wildmenu
+" use nicer autocomplete style
+set wildmode=list:longest,full
 " highlight matching [{()}]
 set showmatch
 " show line and column
