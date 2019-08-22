@@ -1,1 +1,0 @@
-../bundle/vim-coffee-script/compiler/cake.vim
