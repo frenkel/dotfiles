@@ -11,6 +11,8 @@ match Error /\s\+$\| \+\ze\t/
 set wildmenu
 " use nicer autocomplete style
 set wildmode=list:longest,full
+" ignore some huge directories
+set wildignore=*/node_modules/*,*/vendor/bundle/*,*/tmp/*,*/vendor/cache/*
 " highlight matching [{()}]
 set showmatch
 " show line and column
@@ -43,3 +45,10 @@ set colorcolumn=80
 " line numbers relative to current cursor position
 set number
 set relativenumber
+
+" open CtrlP with that shortcut
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" open lwindow or cwindow after search/make/...
+autocmd QuickFixCmdPost [^l]* nested cwindow
