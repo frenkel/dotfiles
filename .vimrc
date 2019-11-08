@@ -40,7 +40,7 @@ autocmd FileType ruby setlocal makeprg=bin/rails\ test
 set grepprg=git\ grep\ -n
 
 " highlight the 80 char column
-set colorcolumn=80
+set colorcolumn=80,100
 
 " line numbers relative to current cursor position
 set number
