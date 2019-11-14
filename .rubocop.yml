@@ -7,7 +7,7 @@ Layout/MultilineMethodCallIndentation:
   IndentationWidth: 4
 Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
-  IndentationWidth: 4
+  IndentationWidth: 2
 Layout/AlignArray:
   Enabled: false
 Layout/AlignHash:
