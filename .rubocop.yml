@@ -19,7 +19,7 @@ Layout/AlignArguments:
   EnforcedStyle: with_fixed_indentation
   IndentationWidth: 4
 Layout/IndentFirstHashElement:
-  EnforcedStyle: consistent
+  Enabled: false
 Layout/IndentFirstArgument:
   Enabled: false
 Layout/IndentFirstArrayElement:
