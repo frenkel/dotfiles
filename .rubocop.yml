@@ -18,12 +18,12 @@ Layout/AlignParameters:
 Layout/AlignArguments:
   EnforcedStyle: with_fixed_indentation
   IndentationWidth: 4
+Layout/IndentFirstArrayElement:
+  Enabled: false
 Layout/IndentFirstHashElement:
   Enabled: false
 Layout/IndentFirstArgument:
   Enabled: false
-Layout/IndentFirstArrayElement:
-  EnforcedStyle: consistent
 
 Style/WordArray:
   EnforcedStyle: brackets
