@@ -8,22 +8,24 @@ Layout/MultilineMethodCallIndentation:
 Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
   IndentationWidth: 2
-Layout/AlignArray:
+Layout/ArrayAlignment:
   Enabled: false
-Layout/AlignHash:
+Layout/HashAlignment:
   Enabled: false
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
   IndentationWidth: 4
-Layout/AlignArguments:
+Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
   IndentationWidth: 4
-Layout/IndentFirstArrayElement:
+Layout/FirstHashElementIndentation:
   Enabled: false
-Layout/IndentFirstHashElement:
+Layout/FirstArgumentIndentation:
   Enabled: false
-Layout/IndentFirstArgument:
-  Enabled: false
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+Layout/LineLength:
+  Max: 100
 
 Style/WordArray:
   EnforcedStyle: brackets
@@ -48,8 +50,6 @@ Style/IfUnlessModifier:
 
 Metrics/ClassLength:
   Enabled: false
-Metrics/LineLength:
-  Max: 100
 Metrics/PerceivedComplexity:
   Enabled: false
 Metrics/CyclomaticComplexity:
