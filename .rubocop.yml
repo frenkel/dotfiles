@@ -23,7 +23,7 @@ Layout/FirstHashElementIndentation:
 Layout/FirstArgumentIndentation:
   Enabled: false
 Layout/FirstArrayElementIndentation:
-  EnforcedStyle: consistent
+  Enabled: false
 Layout/LineLength:
   Max: 100
 
