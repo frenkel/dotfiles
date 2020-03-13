@@ -2,7 +2,7 @@ syntax on
 " dark terminal background
 set background=dark
 
-" show trailing whitespace:
+" show trailing whitespace
 match Error /\s\+$/
 " show trailing whitespace and spaces before a tab
 match Error /\s\+$\| \+\ze\t/
@@ -39,8 +39,8 @@ autocmd FileType ruby setlocal makeprg=bin/rails\ test
 " use git grep as grep command
 set grepprg=git\ grep\ -n
 
-" highlight the 80 char column
-set colorcolumn=80,100
+" highlight the 100 char column
+set colorcolumn=100
 
 " line numbers relative to current cursor position
 set number
