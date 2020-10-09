@@ -5,6 +5,13 @@ AllCops:
     - db/schema.rb
   NewCops: enable
 
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - development
+    - test
+    - staging
+
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
   IndentationWidth: 4
