@@ -30,7 +30,7 @@ set backspace=indent,eol,start
 set sts=-1
 
 " expand tab, tab size and autoindent based on file type
-autocmd FileType ruby,eruby,yaml,coffee,javascript,json,sql setlocal et ts=2 sw=2 ai
+autocmd FileType ruby,eruby,yaml,coffee,javascript,json,sql,html setlocal et ts=2 sw=2 ai
 autocmd FileType php setlocal ts=4 sw=4 ai
 autocmd FileType rust setlocal et ts=4 sw=4 ai
 

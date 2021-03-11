@@ -2,6 +2,12 @@ require: rubocop-rails
 
 AllCops:
   Exclude:
+    - 'vendor/**/*'
+    - 'node_modules/**/*'
+    - 'bin/**/*'
+    - 'config/**/*'
+    - config.ru
+    - Rakefile
     - db/schema.rb
   NewCops: enable
 
@@ -58,15 +64,15 @@ Style/GuardClause:
 Style/IfUnlessModifier:
   Enabled: false
 
-Metrics/ClassLength:
-  Enabled: false
-Metrics/PerceivedComplexity:
-  Enabled: false
-Metrics/CyclomaticComplexity:
-  Enabled: false
-Metrics/AbcSize:
-  Enabled: false
-Metrics/MethodLength:
-  Enabled: false
-Metrics/BlockLength:
-  Enabled: false
+#Metrics/ClassLength:
+#  Enabled: false
+#Metrics/PerceivedComplexity:
+#  Enabled: false
+#Metrics/CyclomaticComplexity:
+#  Enabled: false
+#Metrics/AbcSize:
+#  Enabled: false
+#Metrics/MethodLength:
+#  Enabled: false
+#Metrics/BlockLength:
+#  Enabled: false
